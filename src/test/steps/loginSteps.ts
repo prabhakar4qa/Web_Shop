@@ -30,14 +30,3 @@ When('User enters the password as {string}', async function (password) {
 When('User clicks on the login button', async function () {
     await loginPage.clickLoginButton();
 });
-
-
-// Then('Login should be successful', async function () {
-//     const user = fixture.page.locator("//a[@class='ico-logout']");
-//     await expect(user).toBeVisible();
-//     const userEmail = fixture.page.locator("div[class='header-links'] a[class='account']");
-//     const loginEmailId = await user.textContent();
-//     console.log("UserLoginEmailId: " + loginEmailId);
-//     fixture.logger.info("UserLoginEmailId: " + loginEmailId);
-// })
-

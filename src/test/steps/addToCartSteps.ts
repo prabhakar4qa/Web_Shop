@@ -12,12 +12,12 @@ When('User navigates to the Web Shop home page', async function () {
     await addToCartPage.navigateToDemoWebShopPage();
 });
 
-When('user select the item category {string}', async function (category) {
-    await addToCartPage.selectCategory(category);
+When('user select the item category {string}', async function (categoryName) {
+    await addToCartPage.selectCategory(categoryName);
 });
 
 When('user add the items to the cart {string}', async function (book) {
-    await addToCartPage.addtoCart();
+    await addToCartPage.addToCart();
 });
 
 Then('the cart badge should get updated', async function () {

@@ -20,17 +20,17 @@ export default class RegisterPage {
         await expect(fixture.page.locator(this.Elements.user)).toBeVisible();
     }
     
-    async selectCategory(category: string) {
+    async selectCategory(categoryName: string) {
         const cat = fixture.page.locator(this.Elements.category);
         await cat.click();        
     }
 
-    async addtoCart() {
-        console.log("In add to cart method");
+    async addToCart() {
         const categoryList = this.page.locator(this.Elements.category);
         await categoryList.click();
         const item = this.page.locator(this.Elements.item1);
-        await item.click();        
+        await item.click();
+        await this.page.waitForTimeout(1000);        
     }
 }
 

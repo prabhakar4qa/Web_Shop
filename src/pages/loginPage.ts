@@ -38,5 +38,4 @@ export default class LoginPage {
         await this.enterPassword(password);
         await this.clickLoginButton();
     }
-
 }

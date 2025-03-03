@@ -6,5 +6,6 @@
     "city": "Auckland",
     "address1": "208 methen road ",
     "postalCode": "0610 ",
-    "phoneNumber": "0272201556"
+    "phoneNumber": "0272201556",
+    "countryId": "55"
 }

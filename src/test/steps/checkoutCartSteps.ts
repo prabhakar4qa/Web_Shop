@@ -8,11 +8,12 @@ let checkoutCartPage: CheckoutCartPage;
 
 When('Accept the TermsAndConditions before proceeding', async function () {
     checkoutCartPage = new CheckoutCartPage(fixture.page);
-    await checkoutCartPage.navigateToShoppingcartPage();
+    await checkoutCartPage.navigateToShoppingCartPage();
     
     //wait for the checkout page to load
-    await fixture.page.waitForTimeout(2000);
-
-    await checkoutCartPage.acceptTermsandConditions();
-    await checkoutCartPage.checkouttheCart();
+    await fixture.page.waitForTimeout(1000);    
+    
+    await checkoutCartPage.selectCountry();
+    await checkoutCartPage.acceptTermsAndConditions();
+    await checkoutCartPage.checkoutTheCart();
 });
